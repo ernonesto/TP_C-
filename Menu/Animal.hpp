@@ -3,6 +3,7 @@
 using namespace std;
 #include <string>
 
+//Create class Animal
 class Animal
 {
 public:

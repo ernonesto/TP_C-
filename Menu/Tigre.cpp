@@ -1,6 +1,7 @@
 #include "Tigre.hpp"
 #include <string>
 
+//Create class Tigre
 Tigre::Tigre(string nNom, float nPoid) : Animal("Tigre", nNom, nPoid, "-", getViandeQuotidienne(), 0, 0)
     {}
     Tigre::~Tigre()
