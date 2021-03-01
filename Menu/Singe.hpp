@@ -3,6 +3,7 @@
 #include "Animal.hpp"
 #include <string>
 
+//La classe singe permet de crer un singe
 class Singe : public Animal
 {
 public:

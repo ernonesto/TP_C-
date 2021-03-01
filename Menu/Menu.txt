@@ -1,1 +1,1 @@
-Release/Singe.cpp.o Release/Animal.cpp.o Release/main.cpp.o Release/Rhinoceros.cpp.o Release/Tigre.cpp.o   
+Debug/Animal.cpp.o Debug/Tigre.cpp.o Debug/Rhinoceros.cpp.o Debug/main.cpp.o Debug/Singe.cpp.o   
