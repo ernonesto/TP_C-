@@ -3,21 +3,29 @@
 #include "Animal.hpp"
 #include <string>
 
-//La classe singe permet de crer un singe
+//La classe singe permet de créer un singe
+
 class Singe : public Animal
 {
+    
+private:
+    std::string enclose;
 public:
+
+// Constructeur
+
     Singe(string nNom, float nPoid, string nEnclose);
+    
+// Destructeur
+    
     ~Singe();
+    
     std::string getSingeNom() const;
     float getSingePoid() const;
     float getViandeQuotidienne() const;
     float getFruitsQuotidienne() const;
     float getHerbsQuotidienne() const;
     std::string getEnclose() const ;
-    
-private:
-    std::string enclose;
 };
 
 #endif // SINGE_HPP

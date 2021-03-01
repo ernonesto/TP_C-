@@ -1,13 +1,15 @@
 #include "Animal.hpp"
 #include <string>
 
+
 Animal::Animal()
 {
 }
-Animal::Animal(string nType, string nNom, float nPoid, string nDetails, float nViande, float nFruits, float nHerbe)
-        : type(nType), nom(nNom), poid(nPoid), details(nDetails), viande(nViande), fruits(nFruits), herbe(nHerbe)
+
+Animal::Animal(string le_Type, string le_Nom, float le_Poids, string le_Detailles, float le_Viande, float le_Fruits, float le_Herbes)
+        : type(le_Type), nom(le_Nom), poid(le_Poids), details(le_Detailles), viande(le_Viande), fruits(le_Fruits), herbe(le_Herbes)
     {
-        }
+    }
 
 Animal::~Animal()
 {

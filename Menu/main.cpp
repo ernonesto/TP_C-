@@ -16,16 +16,18 @@ struct Diete
  
  void showMenu()
 {
-   //   Menu des animeaux que l'on peut créer.
+   //   Menu pour demande l'ajout des animaux 
+   
     std::cout << "=== MENU ===" << std::endl;
     std::cout << "  1. Ajouter un Tigre" << std::endl;
     std::cout << "  2. Ajouter un Singe" << std::endl;
-    std::cout << "  3. Ajouter un Rhinocéros" << std::endl;
+    std::cout << "  3. Ajouter un Rhinoceros" << std::endl;
     std::cout << "  4. Afficher un compte-rendu du  parc ou le diete" << std::endl;
     std::cout << "  5. Quitter" << std::endl;
     std::cout << "Votre choix : ";
 }
-
+ // Création de méthode pour ajouter des Tigres
+ 
 Tigre addNewTigre()
 {
     string tigerNom;
@@ -38,6 +40,8 @@ Tigre addNewTigre()
     return tiger;
 }
 
+ // Création de méthode pour ajouter des Singes
+ 
 Singe addNewSinge()
 {
     string singeNom, enclos;
@@ -48,9 +52,9 @@ Singe addNewSinge()
     cout<<"Entrez le poid du singe: " << '\n';
     cin >> singePoid;
     do {
-        cout<<"Est-ce que enclose avec herbe? (oui/no)"<< '\n';
+        cout<<"Est-ce que enclose avec herbe? (oui/non)"<< '\n';
         cin >> enclos;
-    } while (enclos !="oui" && enclos !="no");
+    } while (enclos !="oui" && enclos !="non");
     if(enclos == "oui") {
         Singe singe(singeNom, singePoid, " Enclose avec herbe");
         return singe;
@@ -60,6 +64,8 @@ Singe addNewSinge()
         return singe;
     }
 }
+
+// Création de méthode pour ajouter des Rhinoceros
 
 Rhinoceros addNewRhinoceros()
 {
@@ -78,6 +84,9 @@ Rhinoceros addNewRhinoceros()
     Rhinoceros rhino (rinoNom, rinoPoid, enclos);
     return rhino;
 }
+
+//Création de méthode pour afficher le compte - rendu
+
  void afficherCompte(vector<Animal> animals, Diete diete)
 {
     for(int i=0; i<animals.size(); i++)
@@ -96,7 +105,8 @@ Rhinoceros addNewRhinoceros()
  
 int main()
 {
-  // Affichage du menu
+  // Affichage du Menu
+  
   int choix ;
   std::string nom;
   float poids;
@@ -108,7 +118,8 @@ int main()
     cin >> choix;
     if(sizeof(dyn_arr) < 250)
     {
-            //Demander le nom et le poids de l'animal.
+            
+            
         switch(choix) 
         {
              case 1:
@@ -146,7 +157,7 @@ int main()
             case 5:
             {
                 vector<Animal>().swap(dyn_arr);
-                cout << "Merci d<avoir utilise notre logiciel";
+                cout << "Merci d'avoir utilise notre logiciel";
                 exit(1);
               break; 
             }

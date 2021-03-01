@@ -19,7 +19,7 @@
     float Rhinoceros::getRhinoPoid() const {return getPoid();};
     string Rhinoceros::getEspace() const {return (" Enclos de " + std::to_string(espace)); };
     
-Rhinoceros::~Rhinoceros()
-{
-}
+    Rhinoceros::~Rhinoceros()
+    {
+    }
 
