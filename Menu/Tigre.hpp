@@ -3,7 +3,7 @@
 
 #ifndef TIGRE_HPP
 #define TIGRE_HPP
-
+//La classe singe permet de crer un TIgre
 class Tigre : public Animal
 {
 public:
